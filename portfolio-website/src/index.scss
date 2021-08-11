@@ -1,0 +1,107 @@
+@font-face {
+	font-family: 'Conv_Ogg Roman';
+	src: url('./fonts/Ogg Roman.eot');
+	src: local('☺'), url('./fonts/Ogg Roman.woff') format('woff'), url('./fonts/Ogg Roman.ttf') format('truetype'), url('./fonts/Ogg Roman.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+html, body {
+  font-family:'Conv_Ogg Roman',Sans-Serif;
+  background-color: #181818;
+  color: #DFD3C3;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+html *,
+body * {
+    cursor: none;
+}
+
+html *:hover,
+body *:hover{
+    cursor: none;
+}
+
+
+/* -------------------- */
+.cursor {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fefefe;
+    border-radius: 100%;
+    z-index: 999999999999;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+
+    mix-blend-mode: difference;
+    transition: all 150ms ease;
+    transition-property:  opacity, background-color, transform, mix-blend-mode;
+}
+
+.cursotText {
+    opacity: 0;
+}
+
+.cursor--hidden {
+    opacity: 0;
+}
+
+.cursor--clicked {
+    transform: translate(-50%, -50%) scale(0.9);
+    background-color: #fefefe;
+}
+
+.cursor--link-hovered {
+    transform: translate(-50%, -50%) scale(1.25);
+    background-color: #fefefe;
+}
+
+.cursor--project-hovered {
+    transform: translate(-50%, -50%) scale(2.4);
+    background-color: #DFD3C3;
+    border: 1px solid #DFD3C3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .cursotText {
+        z-index: 9999999999999999;
+        opacity: 1;
+        font-size: 7px;
+    }
+}
+
+.cursor--menu-link {
+    transform: translate(-50%, -50%) scale(0.6);
+    background-color: #fefefe;
+}
+
+/*------------*/ 
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+/* ---------------------- */ 
+
+
+
+@keyframes glowing {
+    0% { opacity: 1;}
+    25% {opacity: 0.5;}
+    50% { opacity: 0;}
+    75% {opacity: 0.5;}
+    100% { opacity: 1; }
+}
+
+@keyframes marquee {
+	from { transform: translateX(0); }
+	to { transform: translateX(-50%); }
+}
+
+@-webkit-keyframes bounce-1{0%{-webkit-transform:translateY(0);transform:translateY(0)}50%{-webkit-transform:translateY(-15px);transform:translateY(-15px)}100%{-webkit-transform:translateY(0);transform:translateY(0)}} @keyframes bounce-1{0%{-webkit-transform:translateY(0);transform:translateY(0)}50%{-webkit-transform:translateY(-15px);transform:translateY(-15px)}100%{-webkit-transform:translateY(0);transform:translateY(0)}}

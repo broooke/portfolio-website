@@ -1,0 +1,1 @@
+web: gunicorn gaydenkoWebsite.wsgi --log-file -

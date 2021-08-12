@@ -56,7 +56,7 @@ function Cursor() {
             el.addEventListener("mouseover", () => setProjectHovered(true));
             el.addEventListener("mouseout", () => setProjectHovered(false));
         });
-        document.querySelectorAll(".makeStyles-linkMenu-16").forEach(el => {
+        document.querySelectorAll(".jss16").forEach(el => {
             el.addEventListener("mouseover", () => setMenuLink(true));
             el.addEventListener("mouseout", () => setMenuLink(false));
         });

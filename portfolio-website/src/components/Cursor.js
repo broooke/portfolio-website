@@ -60,10 +60,6 @@ function Cursor() {
             el.addEventListener("mouseover", () => setMenuLink(true));
             el.addEventListener("mouseout", () => setMenuLink(false));
         });
-        document.querySelectorAll("a").forEach(el => {
-            el.addEventListener("mouseover", () => setMenuLink(true));
-            el.addEventListener("mouseout", () => setMenuLink(false));
-        });
     };
 
     const removeEventListeners = () => {

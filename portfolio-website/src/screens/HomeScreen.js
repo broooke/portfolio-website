@@ -14,6 +14,8 @@ import Projects from '../components/Projects';
 import ContactForm from '../components/ContactForm';
 import Footer from '../components/Footer';
 import { Link } from '@material-ui/core';
+import useMediaQuery from '@material-ui/core/useMediaQuery'
+import { useTheme } from '@material-ui/core/styles'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -95,7 +97,8 @@ const useStyles = makeStyles((theme) => ({
 function HomeScreen() {
     const classes = useStyles();
     const ref = useRef(null);
-
+    const theme = useTheme()
+    const isMobile = useMediaQuery(theme.breakpoints.down("md"))
 
     // useEffect(() => {
     //     if (!preloader && ref) {
@@ -147,11 +150,14 @@ function HomeScreen() {
                     <InstagramIcon />
                 </Link>
             </div>
-            <div className={classes.timer}>
-                <div className={classes.line}></div>
-                <Typography className={classes.text}>locomotive scroll</Typography>
-                <div className={classes.line1}></div>
-            </div>
+            {isMobile ? null
+                : (
+                <div className={classes.timer}>
+                    <div className={classes.line}></div>
+                    <Typography className={classes.text}>locomotive scroll</Typography>
+                    <div className={classes.line1}></div>
+                </div>
+            )}
             <div id='main-container' data-scroll-container ref={ref}>
                 <Header />
                 <Container data-scroll-section className={classes.container}>

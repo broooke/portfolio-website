@@ -1,6 +1,6 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
-import { Typography } from '@material-ui/core'
+import { Typography, Link } from '@material-ui/core'
 import ReactHover, { Trigger, Hover } from "react-hover";
 
 const useStyles = makeStyles((theme) => ({
@@ -84,10 +84,12 @@ function Projects() {
 
                 <ReactHover options={optionsCursorTrueWithMargin}>
                     <Trigger type="trigger">
+                        <Link style={{textDecoration: 'none'}} href="https://github.com/broooke/dashboard-app">
                         <div data-scroll="1" data-scroll-speed="2" data-scroll-direction="horizontal" data-scroll-repeat="true" className={classes.projectDetail}>
                             <Typography className={classes.projectName}>CRM</Typography>
                             <Typography>01</Typography>
                         </div>
+                        </Link>
                     </Trigger>
                     <Hover type="hover">
                         <div style={{height: 350, width: 270, transform: 'rotate(-30deg) skew(25deg) scale(0.8)', position: 'absolute', top: '-80%', left: '50%'}}>
@@ -100,10 +102,12 @@ function Projects() {
 
                 <ReactHover options={optionsCursorTrueWithMargin1}>
                     <Trigger type="trigger">
+                        <Link style={{textDecoration: 'none'}} href="https://github.com/broooke/blog-django">
                         <div data-scroll="1" data-scroll-speed="3" data-scroll-direction="horizontal" data-scroll-repeat="true" className={classes.projectDetail}>
                             <Typography className={classes.projectName}>BLOG</Typography>
                             <Typography>02</Typography>
                         </div>
+                        </Link>
                     </Trigger>
                     <Hover type="hover">
                         <div style={{height: 350, width: 270, transform: 'rotate(-30deg) skew(25deg) scale(0.8)', position: 'absolute', top: '-80%', left: '50%'}}>
@@ -116,10 +120,12 @@ function Projects() {
 
                 <ReactHover options={optionsCursorTrueWithMargin2}>
                     <Trigger type="trigger">
+                        <Link style={{textDecoration: 'none'}} href="https://github.com/broooke/fullstack-website-django-react">
                         <div data-scroll="1" data-scroll-speed="4" data-scroll-direction="horizontal" data-scroll-repeat="true" className={classes.projectDetail}>
                             <Typography className={classes.projectName}>ECOMMERCE</Typography>
                             <Typography>03</Typography>
                         </div>
+                        </Link>
                     </Trigger>
                     <Hover type="hover">
                         <div style={{height: 350, width: 270, transform: 'rotate(-30deg) skew(25deg) scale(0.8)', position: 'absolute', top: '-80%', left: '50%'}}>
@@ -132,10 +138,12 @@ function Projects() {
 
                 <ReactHover options={optionsCursorTrueWithMargin3}>
                     <Trigger type="trigger">
+                        <Link style={{textDecoration: 'none'}} href="https://github.com/broooke/DeveloperSearchProject">
                         <div data-scroll="1" data-scroll-speed="5" data-scroll-direction="horizontal" data-scroll-repeat="true" className={classes.projectDetail}>
                             <Typography className={classes.projectName}>DEV SEARCH</Typography>
                             <Typography>04</Typography>
                         </div>
+                        </Link>
                     </Trigger>
                     <Hover type="hover">
                         <div style={{height: 350, width: 270, transform: 'rotate(-30deg) skew(25deg) scale(0.8)', position: 'absolute', top: '-80%', left: '50%'}}>
@@ -148,10 +156,12 @@ function Projects() {
 
                 <ReactHover options={optionsCursorTrueWithMargin4}>
                     <Trigger type="trigger">
+                        <Link style={{textDecoration: 'none'}} href="https://github.com/broooke/service-desk">
                         <div data-scroll="1" data-scroll-speed="6" data-scroll-direction="horizontal" data-scroll-repeat="true" className={classes.projectDetail}>
                             <Typography className={classes.projectName}>SERVICE DESK</Typography>
                             <Typography>05</Typography>
                         </div>
+                        </Link>
                     </Trigger>
                     <Hover type="hover">
                         <div style={{height: 350, width: 270, transform: 'rotate(-30deg) skew(25deg) scale(0.8)', position: 'absolute', top: '-80%', left: '50%'}}>
